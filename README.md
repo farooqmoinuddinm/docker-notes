@@ -38,9 +38,9 @@ tmpfs mount
 #### Docker commands ####
 docker login # is the command to login to the docker registry and We have so many registries: AWS ECR, Dockerhub, Gitlab reigstry etc
 # Pull the docker images from docker hub
-docker pull nignx (if you do not give any tag, it basically downloads the latest tag image)
-docker pull nginx:16
-docker pull ubuntu:20.04
+docker pull nignx (if you do not give any tag, it basically downloads the latest tag image)\
+docker pull nginx:16\
+docker pull ubuntu:20.04\
 # Build your first image
 docker build -t farooqmohammed/python-custom:latest .
 # Verify the docker image
