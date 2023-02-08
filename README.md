@@ -23,11 +23,13 @@ sudo usermod -aG docker ubuntu\
 docker info\
 docker --version
 
+# Docker network details
 Network: Bridge, Host, None, Overlay, Macvlan\
 docker network ls # it will list all the nework types available\
 docker network rm bridge\
 docker network inspect bridge\
-if whilte creating any container by default it uses the docker0 bridge network.
+while creating any container by default it uses the docker0 bridge network.
+Docker-proxy and iptables uses for port forwarding.
 
 
 Volumes:
@@ -55,6 +57,10 @@ docker container run -d --name nignx-server --hostname webserver nginx:latest\
 docker ps (it will show only running containers)\
 docker ps -a (It will show all the containers)\
 docker container inspect nginx-server (you can check the ip address of the container and other useful information of the container)
+docker container rm nginx-server
+docker container run -d --name nignx-server --hostname webserver -p8080:80 nginx:latest
+
+
 # Login to the container
 docker exec -it nginx-server bash
 
