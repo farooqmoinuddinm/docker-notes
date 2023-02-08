@@ -49,11 +49,11 @@ docker image ls
 # Push the image to docker registry
 docker push farooqmohammed/python-custom
 # Creating containers commands
-docker container run/create
-docker run/create
-docker container run -d --name nignx-server --hostname webserver nginx:latest
-docker ps (it will show only running containers)
-docker ps -a (It will show all the containers)
+docker container run/create\
+docker run/create\
+docker container run -d --name nignx-server --hostname webserver nginx:latest\
+docker ps (it will show only running containers)\
+docker ps -a (It will show all the containers)\
 docker container inspect nginx-server (you can check the ip address of the container and other useful information of the container)
 # Login to the container
 docker exec -it nginx-server bash
