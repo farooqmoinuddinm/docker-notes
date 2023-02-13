@@ -56,9 +56,11 @@ docker run/create\
 docker container run -d --name nignx-server --hostname webserver nginx:latest\
 docker ps (it will show only running containers)\
 docker ps -a (It will show all the containers)\
-docker container inspect nginx-server (you can check the ip address of the container and other useful information of the container)
-docker container rm nginx-server
-docker container run -d --name nignx-server --hostname webserver -p8080:80 nginx:latest
+docker container inspect nginx-server (you can check the ip address of the container and other useful information of the container)\
+docker container rm nginx-server\
+docker container run -d --name nignx-server --hostname webserver -p8080:80 nginx:latest\
+docker container run -d --name ubuntu-server ubuntu:20.04 (this container will existed because it has not running any application, run this you need to run the container like below)\
+docker container -itd --name ubuntu-server ubuntu:20.04
 
 
 # Login to the container
