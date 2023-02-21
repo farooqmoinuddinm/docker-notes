@@ -83,19 +83,19 @@ docker container -itd --name ubuntu-server ubuntu:20.04
 docker exec -it nginx-server bash
 
 # Docker file commands
-Here are all the commands that we can use in the Dockerfile.
-Comments
-FROM
-CMD
-ENTRYPOINT
-WORKDIR
-ENV
-COPY
-LABEL
-RUN
-ADD
-.dockerignore
-ARG
-EXPOSE
-USER
+Here are all the commands that we can use in the Dockerfile.\
+Comments \
+FROM \
+CMD \
+ENTRYPOINT \
+WORKDIR \
+ENV \
+COPY \
+LABEL \
+RUN \
+ADD \
+.dockerignore \
+ARG \
+EXPOSE \
+USER \
 VOLUME
