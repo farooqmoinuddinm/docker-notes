@@ -115,10 +115,14 @@ docker images
 docker image ls
 docker network ls
 docker pull [image-name]:[version]
-docker create [image-id]
+docker container create [image-id]
 docker start [container-ID]
 docker run -d -p [host-port]:[container-port] --name web-server --network internal-network [image-name]:[version]
 docker exec -it [container-id] bash
+docker container start container-id
+docker container stop container-id
+docker container logs container-id 
 
 ```
+
 
