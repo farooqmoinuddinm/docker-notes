@@ -100,8 +100,25 @@ EXPOSE \
 USER \
 VOLUME
 
-#### Docker build and push command
+#### Docker build and push example
 ```
 docker build -t [docker-hub-URL]/[your-username]/[image-name]:version .
 docker push [docker-hub-URL]/[your-username]/[image-name]:version
+
 ```
+
+#### Docker general commands
+```
+docker ps
+docker ps -a
+docker images
+docker image ls
+docker network ls
+docker pull [image-name]:[version]
+docker create [image-id]
+docker start [container-ID]
+docker run -d -p [host-port]:[container-port] --name web-server --network internal-network [image-name]:[version]
+docker exec -it [container-id] bash
+
+```
+
