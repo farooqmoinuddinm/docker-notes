@@ -99,3 +99,9 @@ ARG \
 EXPOSE \
 USER \
 VOLUME
+
+#### Docker build and push command
+```
+docker build -t [docker-hub-URL]/[your-username]/[image-name]:version .
+docker push [docker-hub-URL]/[your-username]/[image-name]:version
+```
