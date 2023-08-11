@@ -60,7 +60,10 @@ docker logs container-id
 # Stop, start and pause the container
 docker container stop container-id
 docker contaier start contaier-id
+docker restart container-id
 docker container pause contaier-id
+docker unpause contaier-id
+
 # Login to the container for any troubleshooing and check the information
 docker exec -it container-id bash
 docker exec <container_id_or_name> netstat -tuln
@@ -69,6 +72,13 @@ docker inspect container-id
 docker cp <local_path> <container_id_or_name>:<container_path>
 # Copy data from container to host
 docker cp <container_id_or_name>:<container_path> <local_path>
+# kill the container
+docker kill container-id
+# check the container resource usage
+docker top container-id
+
+docker diff conainer-id
+docker commit container image
 
 ```
 #### Docker networking
