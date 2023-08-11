@@ -127,4 +127,26 @@ ENTRYPOINT
 CMD
 
 ```
+#### Dockerfile example for Python Flask application
 
+```
+FROM python:3.9-alpine as builder
+RUN apk update && apk add --no-cache gcc musl-dev
+WORKDIR /app
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir --user -r requirements.txt
+COPY . /app/
+
+FROM python:3.9-alpine
+RUN adduser -D appuser
+USER appuser
+WORKDIR /app
+COPY --FROM=builder /root/.local /home/appuser/.local
+RUN apk add --no-cache libstdc++
+COPY . /app/
+ENV FLASK_APP=main.py
+EXPOSE 8080
+ENV PATH=/home/appuser/.local/bin$PATH
+CMD ["flask", "--host=0.0.0.0", "--port=8080"]
+
+```
