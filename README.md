@@ -9,6 +9,7 @@ docker registry contains the docker images, we pull and push images to the docke
 Containers are light weight, portable and it is easy to share and deploy.
 
 Container Run times: \
+Docker \
 Podman \
 containerd \
 rkt \
