@@ -55,7 +55,8 @@ tmpfs mount
 
 #### Docker commands ####
 ```
-docker login # is the command to login to the docker registry and We have so many registries: AWS ECR, Dockerhub, Gitlab reigstry etc
+# Below is the command to login to the docker registry or any other registries like: AWS ECR, Dockerhub, Gitlab reigstry etc
+docker login 
 
 ```
 #### Docker build and push example
