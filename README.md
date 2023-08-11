@@ -106,7 +106,38 @@ docker build -t [docker-hub-URL]/[your-username]/[image-name]:version .
 docker push [docker-hub-URL]/[your-username]/[image-name]:version
 
 ```
+#### Check running and existed containers
+```
+docker ps
+docker ps -a
 
+```
+#### Creat a container
+```
+
+docker run -d -p [host-port]:[container-port] --name web-server --network internal-network -v my-vol:/usr/share/nginx/html [image-name]:[version]
+docker container logs container-id
+docker logs container-id
+docker container stop container-id
+docker contaier start contaier-id
+docker container pause contaier-id
+docker exec -it container-id bash
+docker inspect container-id
+```
+#### Docker networking
+```
+docker network ls
+docker network create roboshop
+docker network create --driver=bridge --subnet=192.168.0.0/16 br0
+docker inspect netwwork-name
+```
+
+#### Docker volume
+```
+docker volume ls
+
+
+ 
 #### Docker general commands
 ```
 docker ps
@@ -116,12 +147,7 @@ docker image ls
 docker network ls
 docker pull [image-name]:[version]
 docker container create [image-id]
-docker start [container-ID]
-docker run -d -p [host-port]:[container-port] --name web-server --network internal-network [image-name]:[version]
-docker exec -it [container-id] bash
-docker container start container-id
-docker container stop container-id
-docker container logs container-id 
+
 
 ```
 
