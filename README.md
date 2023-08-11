@@ -9,7 +9,12 @@ A container is a bundle of Application, Application libraries required to run yo
 docker registry contains the docker images, we pull and push images to the docker registry ans share images with others too.\
 Containers are light weight, portable and it is easy to share and deploy.
 
-Similar tools like docker: Podman, containerd, rkt, LXC, runc.
+Container Run times: \
+Podman \
+containerd \ 
+rkt \
+LXC \
+runc
 
 Container image build tools: \
   Docker \
