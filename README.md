@@ -25,27 +25,8 @@ docker --version
 
 # Docker networking and commands
 
-Below are the network types of docker network 
 
-1. bridge network 
-2. host network 
-3. overlay network 
-4. null 
 
-Default network is bridge network and you can also create a different network type with docker commands.
-when we install the docker it will create a docker01 virtual interface. 
-
-docker network ls \
-docker network ls --filter driver=bridge \
-docker network create simple-network \
-docker network inspect simple-network \
-docker network rm simple-network \
-docker network prune \
-docker network connect simple-network container1 \
-docker network disconnect simple-network container1 \
-docker network create --subnet 192.168.1.0/24 --gateway 192.168.1.1 bridge-farooq \
-docker container run -d --name web-server --hostname webserver -p 80:80 --network bridge-farooq -ip 192.168.1.10 farooqmohammed/python-custom \
-docker run -itd --network=multi-host-network busybox 
 
 
 Volumes:
@@ -84,6 +65,13 @@ docker exec -it container-id bash
 docker inspect container-id
 ```
 #### Docker networking
+Docker different network types. 
+
+1. bridge network 
+2. host network 
+3. overlay network 
+4. null
+   
 ```
 docker network ls
 docker network create roboshop
