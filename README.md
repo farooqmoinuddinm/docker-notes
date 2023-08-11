@@ -39,17 +39,27 @@ docker ps
 docker ps -a
 
 ```
-#### Creat a container
+#### Create and operate containers
 ```
 
+# Create a container with different options
 docker run -d -p [host-port]:[container-port] --name web-server --network internal-network -v my-vol:/usr/share/nginx/html [image-name]:[version]
+# check the container logs for any application errors and issues
 docker container logs container-id
 docker logs container-id
+# Stop, start and pause the container
 docker container stop container-id
 docker contaier start contaier-id
 docker container pause contaier-id
+# Login to the container for any troubleshooing and check the information
 docker exec -it container-id bash
+docker exec <container_id_or_name> netstat -tuln
 docker inspect container-id
+# Copy data from host to container
+docker cp <local_path> <container_id_or_name>:<container_path>
+# Copy data from container to host
+docker cp <container_id_or_name>:<container_path> <local_path>
+
 ```
 #### Docker networking
 Docker different network types. 
