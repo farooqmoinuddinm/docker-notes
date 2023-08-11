@@ -11,8 +11,8 @@ Containers are light weight, portable and it is easy to share and deploy.
 
 Similar tools like docker: Podman, containerd, rkt, LXC, runc.
 
-Container image build tools: 
-  Dockerfile \
+Container image build tools: \
+  Docker \
   Buildah \
   Kaniko \
   buildkit
