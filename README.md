@@ -159,3 +159,20 @@ docker image list --quiet --filter dangling=true
 
 ```
 
+#### Dockerfile instructions
+```
+FROM
+WORKDIR
+ARG
+ENV
+RUN
+COPY
+ADD
+USER
+VOLUME
+LABEL
+EXPOSE
+ENTRYPOINT
+CMD
+```
+
