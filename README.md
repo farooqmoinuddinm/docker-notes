@@ -13,14 +13,15 @@ Similar tools like docker: Podman, containerd, rkt, LXC, runc.
 
 Docker image build tools: Dockerfile, Buildah, Kaniko, buildkit.
 
-# Docker installation commands
-sudo apt update\
-sudo apt install docker.io -y\
-systemctl status/start/restart/enabled docker\
-sudo usermod -aG docker ubuntu\
-docker info\
+# Docker installation commands on ubuntu server
+```
+sudo apt update
+sudo apt install docker.io -y
+systemctl status/start/restart/enabled docker
+sudo usermod -aG docker ubuntu
+docker info
 docker --version
-
+```
 #### Docker commands ####
 ```
 # Below is the command to login to the docker registry or any other registries like: AWS ECR, Dockerhub, Gitlab reigstry etc
