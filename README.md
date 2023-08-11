@@ -1,4 +1,3 @@
-
 # Basic notes
 docker deamon is a service.\
 docker engine is actually runs and manage containers.\
