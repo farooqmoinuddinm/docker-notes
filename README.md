@@ -68,8 +68,8 @@ docker network rm roboshop
 ```
 
 #### Docker volume
-volume mount
-bind mount
+volume mount\
+bind mount\
 tmpfs mount
 
 ```
