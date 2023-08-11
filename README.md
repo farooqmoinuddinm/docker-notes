@@ -77,6 +77,7 @@ docker network ls
 docker network create roboshop
 docker network create --driver=bridge --subnet=192.168.0.0/16 br0
 docker inspect netwwork-name
+docker network rm roboshop
 ```
 
 #### Docker volume
