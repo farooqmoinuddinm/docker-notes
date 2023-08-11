@@ -21,17 +21,6 @@ sudo usermod -aG docker ubuntu\
 docker info\
 docker --version
 
-# Docker networking and commands
-
-
-
-
-
-Volumes:
-volume mount
-bind mount
-tmpfs mount
-
 #### Docker commands ####
 ```
 # Below is the command to login to the docker registry or any other registries like: AWS ECR, Dockerhub, Gitlab reigstry etc
@@ -79,6 +68,9 @@ docker network rm roboshop
 ```
 
 #### Docker volume
+volume mount
+bind mount
+tmpfs mount
 ```
 docker volume create my-vol
 docker volume ls
