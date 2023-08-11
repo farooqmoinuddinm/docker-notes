@@ -94,7 +94,9 @@ docker image tag image-name [your-username]/[image-name]:version
 docker image rm image-name
 docker image list --no-trunc
 docker image list --filter dangling=true
-docker image list --quiet --filter dangling=true 
+docker image list --quiet --filter dangling=true
+docker image prune
+docker image prune -f
 
 ```
 
