@@ -134,21 +134,28 @@ docker inspect netwwork-name
 
 #### Docker volume
 ```
+docker volume create my-vol
 docker volume ls
+docker volume inspect my-vol
+docker volume rm my-vol
+docker volume prune
 
-
- 
-#### Docker general commands
 ```
-docker ps
-docker ps -a
-docker images
+
+#### Docker images
+```
 docker image ls
-docker network ls
-docker pull [image-name]:[version]
-docker container create [image-id]
-
+docker images
+docker image pull [docker-hub-URL]/[your-username]/[image-name]:version
+docker image inspect image-name
+docker image push [docker-hub-URL]/[your-username]/[image-name]:version
+docker image history image-name
+docker image build -t image-name .
+docker image tag image-name [your-username]/[image-name]:version
+docker image rm image-name
+docker image list --no-trunc
+docker image list --filter dangling=true
+docker image list --quiet --filter dangling=true 
 
 ```
-
 
