@@ -10,7 +10,7 @@ RUN --mount=type=cache,target=/usr/src/app/.npm \
   npm set cache /usr/src/app/.cpm && \
   npm install
 COPY . .
-dCMD ["npm', "run", "dev"]
+CMD ["npm', "run", "dev"]
 
 FROM base as production
 
