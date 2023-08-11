@@ -11,7 +11,7 @@ Containers are light weight, portable and it is easy to share and deploy.
 
 Container Run times: \
 Podman \
-containerd \ 
+containerd \
 rkt \
 LXC \
 runc
