@@ -1,5 +1,3 @@
-# docker-notes
-This repo is for learning containers and docker
 
 # Basic notes
 docker deamon is a service.\
