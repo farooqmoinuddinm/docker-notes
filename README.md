@@ -116,22 +116,31 @@ docker volume prune
 # list all the images with below command
 docker image ls
 docker images
+
 # print only image id's
 docker image ls -q
+
 # remove or delete the single image
 docker image rm image-name
+
 # removing all the images at a time
 docker image rm $(docker image ls -q)
+
 # pull the image from the remote registry
 docker image pull [docker-hub-URL]/[your-username]/[image-name]:version
+
 # inspect the image
 docker image inspect image-name
+
 # push the image to container registry
 docker image push [docker-hub-URL]/[your-username]/[image-name]:version
+
 # Check the image history
 docker image history image-name
+
 # build the images with below command
 docker image build -t image-name .
+
 # Tag the image
 docker image tag image-name [your-username]/[image-name]:version
 
